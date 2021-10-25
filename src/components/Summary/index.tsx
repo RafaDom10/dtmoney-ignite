@@ -7,8 +7,7 @@ import { TransactionsContext } from '../../TransactionsContext';
 import { Container } from  './styles';
 
 export function Summary() {
-  const transactions = useContext(TransactionsContext);
-  console.log("🚀 ~ file: index.tsx ~ line 11 ~ Summary ~ transactions", transactions)
+  const { transactions } = useContext(TransactionsContext);
 
   return (
     <Container>
